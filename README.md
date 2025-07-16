@@ -24,7 +24,7 @@ Fork this repository, clone it to your machine, and contribute changes. Forking 
 6. Run `git status`. You should now see that the change is committed.
 7. Run `git push origin main`. This command will push the committed change to your repository (the one you forked). The origin means we are going to the GitHub repository that is the origin of your local folder and main is the branch that you are pushing to (you only have a main branch).
 8. Run `git status`. You should now see that there are no changes waiting to be committed or pushed.
-9. Go to your repository on GitHub. Check to see your change in your repository. You should see that your repository is one commit ahead of my repository. You now want to contribute your work to the original repository by making a pull request. You can do this simply by clicking the button in the blue area and making the pull request. If there are no conflicts I will then merge your changes into my repository. That is how contributions work in open source software. You now have the skills to make simple contributions to your favority software!
+9. Go to your repository on GitHub. Check to see your change in your repository. You should see that your repository is one commit ahead of my repository. You now want to contribute your work to the original repository by making a pull request. You can do this simply by clicking the button in the blue area and making the pull request. If there are no conflicts I will then merge your changes into my repository. That is how contributions work in open source software. You now have the skills to make simple contributions to your favorite software!
 
 ## Task 2
 
