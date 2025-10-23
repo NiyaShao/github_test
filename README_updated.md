@@ -1,6 +1,8 @@
 # GitHub Repository Tutorial
 
-Michael Field
+author: Michael Field (thanks Michael!)
+
+modified by Niya Shao to use for in-class exercise
 
 ## Introduction
 
@@ -9,6 +11,30 @@ Git is a file tracking system that is useful for working on software with other 
 * Ensure you have Git and GitHub installed. If you are using a Mac, you likely have git already. You can check by opening a command prompt and typing `git`. If you have Windows you can install Git and Git Bash from https://gitforwindows.org/. Git Bash is a unix-style terminal that integrates with git.
 * Ensure you have a GitHub account
 * Read through this introduction https://webtuu.com/blog/04/a-laymans-introduction-to-git and set up your email address for Git so that it connects to your GitHub
+
+## Before the task
+
+1. Check if you have git installed, using git --version command. For Mac, use default command line tool. For Windows, search for a software called "Git BASH". If this software didn't exist, you can install Git and Git Bash from https://gitforwindows.org/. Git Bash is a unix-style terminal that integrates with git.
+
+2. Configure git so that it connects to your GitHub
+
+git config --global user.name "Your Name Here"
+
+git config --global user.email your@email.com
+
+3. Generate a personalized token as an alternative password. (If you are familiar with GitHub, feel free to skip this step and use your SSH key or something else)
+
+Token is a complicated string that act as a password. Different from password, it didn't give you full access to the GitHub account. For example, you can grant the token access to one specific repository but not other repositories in your account. You can change the setting, such that the token will only be able to modify repository, but not modify your account name and password. To generate a token, use the following steps.
+
+Open up the setting https://github.com/settings/profile
+
+Developer Setting -> Personal Access Token -> Token (Classic)
+
+Generate New Token (Classic)
+
+Fill out note so you know what this token is for, set the expiration day, and check the **repo** box, such that the token can be used to manage repositories. 
+
+Copy the token, store it somewhere you know to use it next time. I just do a local txt file for now, but for more information on how to securely store a token, refer to this discussion https://stackoverflow.com/questions/46645843/where-to-store-my-git-personal-access-token
 
 **Hint: `git status` is your best friend and is a useful tool to check if you have uncommited changes, etc. I frequently use the command to stay oriented.**
 
@@ -24,10 +50,11 @@ Fork this repository, clone it to your machine, and contribute changes. Forking 
 6. Commit the change you made. We need to hit the save button before we send the changes. When you make a commit you include a short message describing what the change is. These messages are often very short. For example, I would run the command `git commit -m "created biography"`. This command is making the commit and the `-m` argument is indicating that we are adding the message that follows.
 7. Run `git status`. You should now see that the change is committed.
 8. Run `git push origin main`. This command will push the committed change to your repository (the one you forked). The origin means we are going to the GitHub repository that is the origin of your local folder and main is the branch that you are pushing to (you only have a main branch).
-9. Run `git status`. You should now see that there are no changes waiting to be committed or pushed.
-10. Go to your repository on GitHub. Check to see your change in your repository. You should see that your repository is one commit ahead of my repository. You now want to contribute your work to the original repository by making a pull request. You can do this simply by clicking the button in the blue area and making the pull request. If there are no conflicts I will then merge your changes into my repository. That is how contributions work in open source software. You now have the skills to make simple contributions to your favorite software!
+9. Git will prompt for your user name and password. Use user name for your GitHub, and use the token you generated and stored earlier.
+10. Run `git status`. You should now see that there are no changes waiting to be committed or pushed.
+11. Go to your repository on GitHub. Check to see your change in your repository. You should see that your repository is one commit ahead of my repository. You now want to contribute your work to the original repository by making a pull request. You can do this simply by clicking the button in the blue area and making the pull request. If there are no conflicts I will then merge your changes into my repository. That is how contributions work in open source software. You now have the skills to make simple contributions to your favorite software!
 
-## Task 2
+## Task 2 (Optional, a good reference for creating your own repository)
 
 Increase your GitHub presence by putting code that you already have on GitHub. You can follow the directions here https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github under **Initializing a Git Repository**. However before you initialize your repository follow these directions.
 
